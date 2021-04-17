@@ -36,15 +36,15 @@
 
             <div class="showcase-form card">
                 <h2>Request a Demo</h2>
-                <form>
+                <form name="myForm" method="post" onsubmit="return validateForm()" action="/">
                     <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="name" placeholder="Name">
                     </div>
                     <div class="form-control">
-                        <input type="text" name="phone" placeholder="Phone Number" required>
+                        <input type="text" name="phone" placeholder="Phone Number">
                     </div>
                     <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Email">
                     </div>
                     <input type="submit" value="Send" class="btn btn-primary">
                 </form>
@@ -71,6 +71,6 @@
         </div>
     </section>
 
+    <script src="app.js"></script>
 </body>
-
 </html>
